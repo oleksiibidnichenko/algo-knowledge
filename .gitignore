@@ -1,0 +1,13 @@
+# resulting files
+*.o
+*.a
+*.so
+
+# build dir
+build
+
+# VIM swap files
+*.swp
+*.swo
+*.swn
+
