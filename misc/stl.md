@@ -47,3 +47,19 @@ std::priority_queue<Ctx, std::vector<Ctx>, CtxCmp> p_q;
 ### Key Points
 - **std::less<T>**: Creates max heap (default)
 - **std::greater<T>**: Creates min heap
+
+
+##  Randomization
+```cpp
+#include <bits/stdc++.h>
+
+auto get_random_number() {
+    // obtain a random number from hardware
+    std::random_device rd;
+    // seed the generator
+    std::mt19937 gen(rd());
+    // here we define variable type and the range
+    std::uniform_int_distribution<> distrib(1, 100);
+    return distrib(gen);
+}
+```
